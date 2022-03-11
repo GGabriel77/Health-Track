@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link booststrap. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Link css externo -->
+    <link rel="stylesheet" href="./Style/style.css">
+    <title>BPM</title>
+</head>
+<body>
+    <!-- Menu -->
+    <header class="header-top">
+        <h1 class="header-title-top">Health Track</h1>
+        <nav class="header-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="atvd.html">Atividades Físicas</a></li>
+          <li><a href="bpm.html">BPM</a></li>
+          <li><a href="pesagem.html">Pesagem</a></li>
+          <!-- <li><a href="perfil.html">Perfil</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Conteúdo -->
+      <!-- Formulário com Bootstrap -->
+      <section class="form-bpm">
+        <div class="container">
+        <h2>Batimentos e Pressão</h2>
+        <form>
+          <div>
+            <label for="text">Sistólica (mmHg)(Maior):</label>
+            <input type="text" class="form-control" id="sistolica">
+          </div>
+          <div>
+            <label for="text">Diastólica (mmHg)(Menor):</label>
+            <input type="text" class="form-control" id="distolica">
+          </div>
+          <div>
+            <label for="text">Pulso (Bat.p/min):</label>
+            <input type="text" class="form-control" id="pulso">
+          </div>
+          <div>
+            <label for="data">Data:</label>
+            <input type="date" class="form-control" id="data">
+          </div>
+          <div>
+            <label for="text">Anotações:</label>
+            <input type="text" class="form-control" id="notes">
+          </div>
+          <button type="submit" class="btn btn-primary">Adicionar</button>
+          <button type="submit" class="btn btn-primary">Cancelar</button>
+        </form>
+      </div>
+    </div>
+      </section>
+</body>
+</html>

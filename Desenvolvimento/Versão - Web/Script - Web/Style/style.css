@@ -1,0 +1,259 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Atribuir fonte da Google */
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+a
+{
+    /* Remover sublinhado dos links. */
+    text-decoration: none;
+    color: white;
+}
+
+ul
+{
+    /* Remover formatação da lista. */
+    list-style: none;
+}
+
+.header-top
+{
+    /* Definir altura como automática. */
+    height: 80px;
+    background-color: black;
+    padding: 0 20px;/*Margem interna cima/baixo = 0 e direita-esquerda = 20px.*/
+    color: white;
+    display: flex;
+    /* Define onde cada item será exibido horizontalmente em relação ao container. */
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header-top-title
+{
+    font-size: 2em;
+}
+
+.header-nav ul
+{
+    /* Deixar um elemento ao lado do outro dentro do container. */
+    display: flex;
+}
+
+.header-nav li
+{
+    /* Definir margem externa entre os itens da lista. */
+    margin: 0 10px;
+}
+
+.header-nav a 
+{
+    font-size: .9rem;
+    /* Dar mais vida a fonte. */
+    font-weight: 800;
+    /* Definir efeito de transição ao passar o mouse sobre o link. */
+    transition: .5s;
+}
+
+.header-nav a:hover
+{
+    color: rgb(251, 117, 251);
+}
+
+/* Conteúdo principal. */
+
+/* Estilo do conteúdo principal */
+.main-content
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Conteúdo principal */
+.main
+{
+    width: 100%;
+    height: 100vh;/*Viewport height - É a área de exibição da página*/
+    /* background-color: aqua; */
+    padding: 0 10px;
+    /* Adicionar imagem ao background e ajustar opacidade */
+    background-image: url("/Imagens_web/_home/halters.jpg");
+    /* Adicionar imagem ao background. Modificar na opacidade da imagem.*/
+    /* background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0)), */
+    /* url(../images/pexels-felix-mittermeier-957002.jpg); */
+    /* Definir atributo para imagem não repetir. */
+    background-repeat: no-repeat;
+    /* Faz com que a imagem cubra o container. */
+    background-size: cover;
+    /* Centraliza a imagem independente do tamanho da janela. */
+    background-position: center;/*Posso substituir por 50%.*/
+    /* Transformar o elemento em flexivel */
+    display: flex;/*Por padrão será sempre "row", não estranhe ao definir flex os conteúdos ficarem ao lado.*/
+    /* Definir itens como "coluna". */
+    flex-direction: column;
+    /* Alinhar itens ao centro. */
+    align-items: center;
+    /* Ajustar conteúdo ao centro do container. */
+    justify-content: center;
+    color: white;
+    text-align: center;
+    /* Margin abaixo */
+    margin-bottom: 50px;
+    /* Remover repetição da imagem */
+}
+
+
+.title-main
+{
+    /* Margem baixa baseando-se no elemento pai, nos 16px definidos acima. */
+    margin-bottom: 2rem;
+    /* Vmin - verrifica a viewport menor e ajusta a fonte de acordo com o menor viewport*/
+    font-size: 8vmin;
+}
+
+.text-main
+{
+    margin-bottom: 2rem;
+    font-size: 5vmin;
+}
+
+.line 
+{
+    width: 150px;
+    height: 4px;
+    background-color: rgb(255, 68, 155);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Área que receberá as imagens do site */
+.funcs-main
+{
+    width: 80%;
+    min-height: 100vh;
+    /* background-color: aqua; */
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main-list
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Editar container onde ficarão as imagens */
+.main-list-item
+{
+    margin-top: 30px;
+    /* Indica que o item ocupará 40 por cento de 100% definidos acima em "Tour-list". */
+    width: 40%;
+    text-align: center;
+}
+
+/* Editando título da imagem */
+.img-title
+{
+    margin-bottom: 20px;
+    font-size: 6vmin;/*Vmin - Valor mínimo*/
+    text-align: center;
+}
+
+.main-list-item img
+{
+    width: 100%;
+    transition: .5s;
+}
+
+/* Escala */
+.main-list-item img:hover
+{
+    /* Aumentar a imagem ao passar o mouse. */
+    transform: scale(1.2);
+}
+
+/* Estilo do rodapé */
+.footer-down
+{
+    color: white;
+    background-color: black;
+    height: 80px;
+}
+/* Editar texto do rodapé */
+.footer-text
+{
+    text-align: center;
+}
+
+/* área do formulário */
+.form-atvd
+{
+    width: 100%;
+    height: 80%;
+}
+
+/* container que receberá o formulário */
+.container
+{
+    margin: 50px;
+    width: 50%;
+    
+}
+
+/* Estilizar tela de controle de peso */
+.img-remove
+{
+    /* Tamanho do ícone */
+    width: 30px;
+}
+
+.img-edit
+{
+    width: 30px;
+}
+
+/* título da tabela */
+.table-title
+{
+    text-align: center;
+    color: black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* container que reeberá a tabeça */
+.space-table
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* Tabela de peso */
+.table-peso
+{
+    position: flex;
+    width: 50%;
+    height: 80%;
+    margin: auto;
+    margin-top: 30px;
+    padding: auto;
+    color: black;
+    border: solid 1px;
+    border-radius: 0.8%;
+}

@@ -1,0 +1,44 @@
+nav#menu
+{
+    display: block;
+}
+nav#menu ul{
+    background-color: rgb(0, 0, 0);
+    /* Remover marcação da lista */
+    list-style: none;
+}
+nav#menu li{
+    /* Adicionar os itens da lista à mesma linha */
+    display: inline-block;
+    background-color: rgb(118, 248, 216);
+    /* Controlar o espaço de dentro do elemento. */
+    padding: 4px;
+    /* Controlar o espaço de fora do elemento.   */
+    margin: 5px;
+    border: 2px solid rgb(248, 248, 248);
+    box-shadow: 1px;
+}
+nav[a]{
+    color: aliceblue;
+}
+div#rodape
+{
+    background-color: rgb(0, 0, 0);
+}
+footer p
+{
+    color: white;
+    /* definir posição do texto como sendo relativo ao footer. */
+    position: relative;
+    text-align: center;
+}
+
+img.Wpp
+{
+    height: 40px;
+    width: 30px;
+}
+
+div#login_home{
+    color: white;
+}
