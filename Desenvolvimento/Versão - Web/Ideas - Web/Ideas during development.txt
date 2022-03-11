@@ -1,7 +1,0 @@
-- O que utilizar na home?
- - Um carroussel?
- - Uma espécie de apresentação com a div row?
- - Conteúdos interativos? 
-
-- A ideia da interface inicialmente é cumprir o que o exercício pede, mas é claro, sempre com estilo.
- - Vamos simplificar, posteriormente, adicionarei estilo.
